@@ -5,6 +5,17 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
+    var rect = document.createElementNS(namespace , "rect")
+    rect.setAttribute ("width" , 100)
+    rect.setAttribute("height",100)
+    rect.setAttribute("x",10)
+    rect.setAttribute("y",100)
+    rect.setAttribute("fill", "gray")
+    
+var canvas = document.getElementById("canvas")
+canvas.appendChild(rect)
+return rect
+    
     
 }
 
