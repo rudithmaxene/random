@@ -5,17 +5,8 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    var rect = document.createElementNS(namespace , "rect")
-    rect.setAttribute ("width" , 100)
-    rect.setAttribute("height",100)
-    rect.setAttribute("x",10)
-    rect.setAttribute("y",100)
-    rect.setAttribute("fill", "gray")
-    
-var canvas = document.getElementById("canvas")
-canvas.appendChild(rect)
-return rect
-    
+   makeCircle(10, 10, 10, "gray",0.1)
+   makePolygon("20,0 50, 10 100,50","grey", 1)
     
 }
 
@@ -24,6 +15,8 @@ return rect
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+    
+    
     
 }
 
@@ -43,10 +36,12 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
-    // If the number is less than 0.33, call the function to create your first scene.
-    
-    
+  makeCircle(100, 50, 20, "gray",1)
+  makePolygon("25,0 25, 10 20,10","grey", 1)
+  makeEllipse(90,48,3,5,"black",1)
+  makeEllipse(110,48,3,5,"black",1)
+  makeEllipse(100,48,1,1,"black",1)
+ 
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
     
