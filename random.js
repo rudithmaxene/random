@@ -37,10 +37,15 @@ function createThirdScene() {
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
   makeCircle(100, 50, 20, "gray",1)
-  makePolygon("25,0 25, 10 20,10","grey", 1)
+  makePolygon("80,47 90, 10 95,33","grey", 1)
   makeEllipse(90,48,3,5,"black",1)
   makeEllipse(110,48,3,5,"black",1)
-  makeEllipse(100,48,1,1,"black",1)
+  makeEllipse(100,55,2,1,"black",1)
+ makeCircle(98,61,2,"black,",1)
+ makeCircle(101,61,2,"black",1)
+ makeCircle(98,60,2,"gray",1)
+ makeCircle(101,60,2,"gray",1)
+ 
  
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
